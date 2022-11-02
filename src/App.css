@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Avenir";
+  src: local("Avenir"), url("./fonts/AvenirLTStd-Book.otf") format("otf");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+body {
+  font-family: Avenir !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.other_pages.navbar-toggler .navbar-toggler-icon {
+  background-image: url(./images/navbarLogos/dark/crossDark.svg) !important;
+}
+.other_pages.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url(./images/navbarLogos/dark/hamburgerDark.svg) !important;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url(./images/navbarLogos/cross.svg) !important;
+}
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url(./images/navbarLogos/hamburger.svg) !important;
+}
+.dark_tab_link:hover {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+._container {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 576px) {
+  ._container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  ._container {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  ._container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  ._container {
+    max-width: 1320px;
+  }
+}

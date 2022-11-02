@@ -1,0 +1,76 @@
+.Common_Carousel {
+  position: relative;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: initial;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+.swiper-button-next:after {
+  content: url(../images/arrow-right.svg);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: -35px;
+}
+.swiper-button-prev {
+  left: auto;
+  right: 60px;
+}
+.swiper-button-prev:after {
+  content: url(../images/arrow-left.svg);
+}
+.Common_Carousel .card_title {
+  font-size: 24px;
+  line-height: 120%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.Common_Carousel .card_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4d4d4d;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto;
+    bottom: -40px;
+  }
+  .swiper-button-prev {
+    left: 15px;
+  }
+  .swiper-button-next {
+    left: 75px;
+  }
+}
